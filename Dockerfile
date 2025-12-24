@@ -9,6 +9,10 @@
 
 FROM niklasf/fishnet:2
 
+# Install btop
+RUN apk update && \
+    apk add --no-cache btop
+
 # Note: KEY environment variable must be passed at runtime with -e KEY=your_key
 # Note: --shm-size=256m must be specified at runtime
 
