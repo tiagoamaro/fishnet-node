@@ -7,7 +7,7 @@
 #   docker build -t fishnet .
 #   docker run -it --shm-size=256m --name fishnet -e KEY=your_key fishnet
 
-FROM niklasf/fishnet:2
+FROM niklasf/fishnet:2.13.0
 
 # Install btop
 RUN apk update && \
